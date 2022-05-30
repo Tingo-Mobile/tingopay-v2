@@ -7,7 +7,7 @@ const config = {
       channel: ['card', 'bank', 'ussd', 'qr', 'mobile_money', 'bank_transfer'],
       email: "godwincahua@gmail.com",
       amount: 20000,
-      publicKey: 'pk_test_15e87923f40efe4c23c75dbf54ace5378d88bc3a',
+      publicKey: process.env.REACT_APP_SEERBIT_PAYSTACK_KEY,
 }
 
 const PayButton = ({isValid=false,formData}) => {
