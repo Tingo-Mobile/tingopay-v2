@@ -1,0 +1,403 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  .text-tingo {
+    color: #304779;
+  }
+  
+  .main-banner {
+    background-image: url("../img/bg-4.webp");
+    position: relative;
+    z-index: 1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0px 60px 0px;
+  }
+  
+  .main-banner::before {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      background-color: rgb(0, 0, 0);
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      z-index: -1;
+      opacity: 0.7;
+  }
+  
+  .main-banner-form {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    position: relative;
+    max-width: 590px;
+    margin-left: auto;
+    padding: 50px 40px;
+    border-radius: 10px;
+  }
+  
+  .main-banner-form .content {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+  }
+  
+
+  .main-banner-content h1 {
+    font-size: 65px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .main-banner h1, p {
+    color: #fff;
+  }
+  
+  
+  /* button */
+  
+  .btn {
+    background-color: #F89A1F !important;
+    padding: 8px 15px !important;
+    color: #fff;
+  }
+  
+  .btn:hover {
+    background-color: #F26822 !important;
+    border: none;
+  }
+  
+  .btn::before {
+      background-color: #F26822 !important;
+  }
+
+  .btnPay {
+      position: relative;
+      width: 100%;
+      background-color: #F89A1F;
+      padding: 10px 15px;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      margin-top: 34px;
+  }
+
+  .btnPay:hover {
+    background-color: #F26822 !important;
+  }
+  
+  .btnPay::before {
+      background-color: #F26822 !important;
+  }
+
+
+  /* quick payment form */
+  .form-group label {
+      padding-top: 20px;
+  }
+
+  .main-banner-form .form-group .form-control {
+    /* color: rgb(110, 114, 127); */
+    font-size: 14px;
+    font-weight: 600;
+    height: 40px;
+    padding: 15px 10px;
+    border-radius: 4px;
+    margin-top: 5px;
+    box-shadow: none;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+}
+
+
+/* .form-control:hover {
+    border: 2px solid orange;
+    box-shadow: none;
+} */
+
+.main-banner-form .form-group select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px !important;
+  border-color: gray !important;
+}
+
+.main-banner-form .form-group select:focus{
+  outline: none !important;
+  border-color: #F89A1F !important;
+}
+
+.form-group input {
+  border: 1px solid gray;
+}
+
+.form-group input:focus {
+  outline: none !important;
+  border: 1px solid #F89A1F !important;
+}
+
+.main-banner-form .form-group .payElect {
+  width: 253px;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.css-1s2u09g-control {
+  background-color: #fff !important;
+  border-color: gray !important;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px !important;
+}
+
+
+
+/* quick service icon */
+.quick-service-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quick-service-icon img {
+  width: 67px;
+  margin: 0px 5px;
+}
+
+
+.quick-service-icon:hover img {
+  content: "Please select";
+  display: block;
+  cursor: pointer;
+}
+
+.navbar {
+  z-index: 1000 !important;
+  background-color: #fff !important;
+}
+
+.partner-area {
+  padding: 50px 0px;
+  background-color: #fbfbfb;
+}
+
+.partner-slider div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-slider div img {
+  width: 150px;
+  margin: 0px 10px;
+}
+
+
+/* SERVICE CARD */
+.service-card {
+  padding: 80px 0px;
+}
+
+.service-card .card:hover {
+  border-top: 2px solid orange;
+  border-left: 2px solid orange;
+  border-bottom: 2px solid #304779;
+  border-right: 2px solid #304779;
+  transition: 5s;
+}
+
+.card {
+  padding: 20px 20px 0px 20px !important;
+}
+
+.card img {
+  width: 20%;
+}
+
+
+
+/* APP SIGN UP STEPS */
+.app-step {
+  padding: 60px 0px;
+}
+
+.app-step .goals {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-step p {
+  color: #6e727f;
+}
+
+.app-step .goals img {
+  overflow: hidden;
+  width: 100%;
+}
+
+.goals-inner-content {
+  max-width: 700px;
+}
+
+.goals-inner-content {
+  position: relative;
+  margin-top: 30px;
+  padding-left: 60px;
+}
+
+.goals-inner-content .number, .footer-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.goals-inner-content .number span {
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  background-color: #F26822;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 50px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.goals-inner-content .number span:hover {
+  background-color: #304779; 
+}
+
+
+/* footer */
+.footer {
+  background-color: #09101f;
+  padding: 70px 0px 20px 0px;
+  color: #fff;
+}
+
+.copy-right {
+  padding-top: 60px;
+}
+
+.footer-copy-right {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 15px;
+  border-top: 1px solid #222836;
+}
+
+.footer-copy-right h4 {
+  font-size: 15px;
+  color: #fff;
+}
+
+
+.footer-icon span {
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  font-size: 25px;
+}
+
+.footer-social-link a {
+  font-size: 30px;
+  color: #fff;
+}
+
+.footer-social-link a:hover {
+  color: #F89A1F;
+}
+
+.social-icon {
+  margin: 0px 10px;
+}
+
+
+/* CTA */
+.cta {
+  background-color:#39598D;
+  padding: 40px 0px;
+  margin: 50px 0px 90px 0px;
+}
+
+.text-color {
+  color: gray;
+}
+
+
+.pay-now {
+  display: flex;
+  width: 100%;
+  background-color: #F89A1F;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.pay-now:hover {
+  background-color: rgba(248, 154, 31, 0.9) ;
+}
+
+.pay-now::before{
+  content: url("../img/checkoutIcon.png");
+  margin-right: 4px;
+  margin-top: 4px;
+}
+
+.error {
+  color: rgb(199, 79, 79);
+}
+
+/* .disabled {
+  display: flex;
+  width: 100%;
+  background-color: rgba(248, 154, 31, 0.4);
+  text-align: center;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: none !important;
+  pointer-events: none !important;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+} */
+
+.pay-now-btn {
+  display: flex;
+  width: 100%;
+  border: none;
+  background-color: rgba(248, 154, 31, 1);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+button:disabled,
+button[disabled]{
+  background-color: rgba(248, 154, 31, 0.4);
+}
